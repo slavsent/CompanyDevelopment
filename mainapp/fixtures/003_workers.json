@@ -7,6 +7,8 @@
       "lastname": "Фамилия 1",
       "post_address": "Адрес 1",
       "bank_account": "Счет в банке 1",
+      "salary": 12345.34,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 3
     }
   },
@@ -18,6 +20,8 @@
       "lastname": "Фамилия 2",
       "post_address": "Адрес 2",
       "bank_account": "Счет в банке 2",
+      "salary": 12345.34,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 5
     }
   },
@@ -29,6 +33,8 @@
       "lastname": "Фамилия 3",
       "post_address": "Адрес 3",
       "bank_account": "Счет в банке 3",
+      "salary": 50000.00,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 8
     }
   },
@@ -40,6 +46,8 @@
       "lastname": "Фамилия 4",
       "post_address": "Адрес 4",
       "bank_account": "Счет в банке 4",
+      "salary": 50000.00,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 11
     }
   },
@@ -51,6 +59,8 @@
       "lastname": "Фамилия 5",
       "post_address": "Адрес 5",
       "bank_account": "Счет в банке 5",
+      "salary": 50000.00,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 12
     }
   },
@@ -62,6 +72,8 @@
       "lastname": "Фамилия 6",
       "post_address": "Адрес 6",
       "bank_account": "Счет в банке 6",
+      "salary": 50000.00,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 12
     }
   },
@@ -73,6 +85,8 @@
       "lastname": "Фамилия 7",
       "post_address": "Адрес 7",
       "bank_account": "Счет в банке 7",
+      "salary": 50000.00,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 11
     }
   },
@@ -84,6 +98,8 @@
       "lastname": "Фамилия 8",
       "post_address": "Адрес 8",
       "bank_account": "Счет в банке 8",
+      "salary": 50000.00,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 12
     }
   },
@@ -95,6 +111,8 @@
       "lastname": "Фамилия 9",
       "post_address": "Адрес 9",
       "bank_account": "Счет в банке 9",
+      "salary": 50000.00,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 12
     }
   },
@@ -106,6 +124,8 @@
       "lastname": "Фамилия 10",
       "post_address": "Адрес 10",
       "bank_account": "Счет в банке 10",
+      "salary": 50000.00,
+      "begin_work": "2023-07-05T18:32:47.331Z",
       "development": 11
     }
   }

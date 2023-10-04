@@ -37,6 +37,8 @@ class Worker(models.Model):
     lastname = models.CharField(max_length=256, verbose_name="Lastname")
     post_address = models.TextField(blank=True, null=True, verbose_name="Address")
     bank_account = models.TextField(blank=True, null=True, verbose_name="Account")
+    begin_work = models.DateTimeField()
+    salary = models.FloatField(verbose_name="Salary")
     development = models.ForeignKey(Developments, on_delete=models.CASCADE)
     deleted = models.BooleanField(default=False)
 

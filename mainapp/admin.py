@@ -34,9 +34,9 @@ class DevelopmentsAdmin(admin.ModelAdmin):
 
 @admin.register(mainapp_models.Worker)
 class WorkerAdmin(admin.ModelAdmin):
-    list_display = ["id", "firstname", "lastname", "post_address", "bank_account", "development", "deleted"]
+    list_display = ["id", "firstname", "lastname", "post_address", "bank_account", "development", "begin_work", "salary", "deleted"]
     list_per_page = 5
-    list_filter = ["firstname", "lastname", "development", "deleted"]
+    list_filter = ["firstname", "lastname", "development", "begin_work", "deleted"]
 
     actions = ["mark_deleted"]
 
