@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1 class="display-4">Отдел - {{ develop.name }}</h1>
+  <div class="col-lg-8">
+
+    {% for item in workers %}
+    <div class="card my-2">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.firstname }}</h5>
+        <h5 class="card-title">{{ item.lastname }}</h5>
+        <p class="card-text">{{ item.post_address }}</p>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+
+
+
+
+
+
+
+
+{% endblock content %}

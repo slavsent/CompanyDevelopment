@@ -1,0 +1,12 @@
+[
+    {
+      "model": "mainapp.company",
+      "pk": 1,
+      "fields": {
+        "name": "ООО 'Ланит'",
+        "short_name": "Ланит",
+        "post_address": "12345, Москва",
+        "bank_account": "Счет в банке"
+      }
+    }
+]

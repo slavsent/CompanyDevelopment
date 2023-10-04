@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+{% for item in company %}
+<div>Компания - {{ item.name }}</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="main_navbar">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Структура компании</a>
+              <ul class="dropdown-menu">
+
+
+                  {% for elem in develop %}
+                  {% if elem.company == item and not elem.parent %}
+                    {% if elem.cod not in devlp_2%}
+                      <li><a cclass="dropdown-item" href="{% url 'mainapp:workers' pk=elem.id %}">{{ elem.name }}</a></li>
+                    {% else %}
+                    <li class="nav-item dropdown"><a cclass="dropdown-item dropdown-toggle" href="{% url 'mainapp:workers' pk=elem.id %}" role="button" data-bs-toggle="dropdown">{{ elem.name }}</a>
+                      <ul class="dropdown-menu">
+                        {% for elem_1 in develop %}
+
+                        {% if elem.company == item and elem_1.parent == elem.cod %}
+                          {% if elem_1.cod not in devlp_3%}
+                            <li><a cclass="dropdown-item" href="{% url 'mainapp:workers' pk=elem.id %}">{{ elem_1.name }}</a></li>
+                          {% else %}
+                          <li class="nav-item dropdown"><a cclass="dropdown-item dropdown-toggle" href="{% url 'mainapp:workers' pk=elem_1.id %}" role="button" data-bs-toggle="dropdown">{{ elem_1.name }}</a>
+                            <ul class="dropdown-menu">
+
+                             {% for elem_2 in develop %}
+
+                              {% if elem.company == item and elem_2.parent == elem_1.cod %}
+                                {% if elem_2.cod not in devlp_4%}
+                                    <li><a cclass="dropdown-item" href="{% url 'mainapp:workers' pk=elem.id %}">{{ elem_2.name }}</a></li>
+                                {% else %}
+                                <li class="nav-item dropdown"><a cclass="dropdown-item dropdown-toggle" href="{% url 'mainapp:workers' pk=elem_2.id %}" role="button" data-bs-toggle="dropdown">{{ elem_2.name }}</a>
+                                  <ul class="dropdown-menu">
+
+                                    {% for elem_3 in develop %}
+
+                                      {% if elem.company == item and elem_3.parent == elem_2.cod %}
+                                        {% if elem_3.cod not in devlp_5%}
+                                            <li><a cclass="dropdown-item" href="{% url 'mainapp:workers' pk=elem.id %}">{{ elem_2.name }}</a></li>
+                                        {% else %}
+                                        <li class="nav-item dropdown"><a cclass="dropdown-item dropdown-toggle" href="{% url 'mainapp:workers' pk=elem_3.id %}" role="button" data-bs-toggle="dropdown">{{ elem_3.name }}</a>
+                                            <ul class="dropdown-menu dropdown-submenu">
+
+                                            {% for elem_4 in develop %}
+
+                                              {% if elem.company == item and elem_4.parent == elem_3.cod %}
+                                                <li><a class="dropdown-item" href="{% url 'mainapp:workers' pk=elem_4.id %}">{{ elem_4.name }}</a></li>
+
+
+                                              {% endif %}
+                                            {% endfor %}
+                                            </ul>
+                                        </li>
+                                        {% endif %}
+                                      {% endif %}
+                                    {% endfor %}
+                                  </ul>
+                                </li>
+                                {% endif %}
+                              {% endif %}
+                              {% endfor %}
+                             </ul>
+                          </li>
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                   </li>
+                    {% endif %}
+                  {% endif %}
+                  {% endfor %}
+
+              </ul>
+            </li>
+
+          </ul>
+
+        </div>
+</nav>
+{% endfor %}
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+
+{% load static %}
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+  <!-- ChartJS -->
+  <link rel="stylesheet" href="{% static 'css/Chart.min.css' %}">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="{% static 'css/fontawesome.all.min.css' %}">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="{% static 'css/my.css' %}">
+
+  <title>Welcome to my Company!</title>
+</head>
+
+<body>
+
+  {% include 'includes/main_menu.html' %}
+
+  <div class="container-md">
+
+    {% block content %}
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+    optio est esse? Veritatis laborum expedita
+    quibusdam numquam! Expedita amet nisi dolor similique autem, mollitia
+    ipsa et, natus vel explicabo
+    reprehenderit?
+
+    {% endblock content %}
+
+  </div>
+
+  <!-- Footer -->
+
+  <div class="container-lg mt-auto">
+    <hr>
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-3 text-center">
+        <p>
+          <strong>Company</strong>
+        </p>
+        <p>
+        <ul class="list-unstyled">
+          <li><a href="{% url 'mainapp:main_page' %}">Домашняя</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Войти</a></li>
+        </ul>
+        </p>
+      </div>
+      <div class="col-sm-6 col-md-3 text-center">
+        <p>
+          <strong>Полезное</strong>
+        </p>
+        <p>
+        <ul class="list-unstyled">
+          <li><a href="#">Положения &amp; Условия</a></li>
+          <li><a href="#">Конфиденциальность &amp; Cookies</a></li>
+          <li><a href="#">Документация по API</a></li>
+          <li><a href="#">Документация по сайту</a></li>
+        </ul>
+        </p>
+      </div>
+
+    </div>
+    <div class="row justify-content-center">
+      <div>
+        <p><small>&copy; Slav Senteryov 2023</small></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- /Footer -->
+
+
+
+
+  <!-- JavaScript section -->
+  <!-- Bootstrap -->
+  <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+  <!-- ChartJs -->
+  <script src="{% static 'js/Chart.min.js' %}"></script>
+
+  <!-- FontAwesome -->
+  <script src="{% static 'js/fontawesome.all.min.js' %}"></script>
+  <script src="{% static 'js/my.js' %}"></script>
+
+
+
+</body>
+
+</html>

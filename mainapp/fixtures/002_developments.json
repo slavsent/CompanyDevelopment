@@ -1,0 +1,131 @@
+[
+  {
+    "model": "mainapp.developments",
+    "pk": 1,
+    "fields": {
+      "cod": "1",
+      "name": "Отдел 1",
+      "levels": "1",
+      "company": 1
+    }
+  },
+  {
+    "model": "mainapp.developments",
+    "pk": 2,
+    "fields": {
+      "cod": "2",
+      "name": "Отдел 2",
+      "levels": "1",
+      "company": 1
+    }
+  },
+  {
+    "model": "mainapp.developments",
+    "pk": 3,
+    "fields": {
+      "cod": "3",
+      "name": "Отдел 3",
+      "levels": "1",
+      "company": 1
+    }
+  },
+  {
+    "model": "mainapp.developments",
+    "pk": 4,
+    "fields": {
+      "cod": "1.1",
+      "name": "Отдел 1.1",
+      "parent": "1",
+      "levels": "2",
+      "company": 1
+    }
+  },
+  {
+      "model": "mainapp.developments",
+      "pk": 5,
+      "fields": {
+        "cod": "1.2",
+        "name": "Отдел 1.2",
+        "parent": "1",
+        "levels": "2",
+        "company": 1
+      }
+    },
+  {
+      "model": "mainapp.developments",
+      "pk": 6,
+      "fields": {
+        "cod": "2.1",
+        "name": "Отдел 2.1",
+        "parent": "2",
+        "levels": "2",
+        "company": 1
+      }
+    },
+  {
+      "model": "mainapp.developments",
+      "pk": 7,
+      "fields": {
+        "cod": "2.1.1",
+        "name": "Отдел 2.1.1",
+        "parent": "2.1",
+        "levels": "3",
+        "company": 1
+      }
+    },
+  {
+      "model": "mainapp.developments",
+      "pk": 8,
+      "fields": {
+        "cod": "2.1.2",
+        "name": "Отдел 2.1.2",
+        "parent": "2.1",
+        "levels": "3",
+        "company": 1
+      }
+    },
+  {
+      "model": "mainapp.developments",
+      "pk": 9,
+      "fields": {
+        "cod": "2.1.1.1",
+        "name": "Отдел 2.1.1.1",
+        "parent": "2.1.1",
+        "levels": "4",
+        "company": 1
+      }
+    },
+  {
+      "model": "mainapp.developments",
+      "pk": 10,
+      "fields": {
+        "cod": "2.1.1.2",
+        "name": "Отдел 2.1.1.2",
+        "parent": "2.1.1",
+        "levels": "4",
+        "company": 1
+      }
+    },
+  {
+      "model": "mainapp.developments",
+      "pk": 11,
+      "fields": {
+        "cod": "2.1.1.2.1",
+        "name": "Отдел 2.1.1.2.1",
+        "parent": "2.1.1.2",
+        "levels": "5",
+        "company": 1
+      }
+    },
+  {
+      "model": "mainapp.developments",
+      "pk": 12,
+      "fields": {
+        "cod": "2.1.1.2.2",
+        "name": "Отдел 2.1.1.2.2",
+        "parent": "2.1.1.2",
+        "levels": "5",
+        "company": 1
+      }
+    }
+]

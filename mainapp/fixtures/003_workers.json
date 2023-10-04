@@ -1,0 +1,112 @@
+[
+  {
+    "model": "mainapp.worker",
+    "pk": 1,
+    "fields": {
+      "firstname": "Имя 1",
+      "lastname": "Фамилия 1",
+      "post_address": "Адрес 1",
+      "bank_account": "Счет в банке 1",
+      "development": 3
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 2,
+    "fields": {
+      "firstname": "Имя 2",
+      "lastname": "Фамилия 2",
+      "post_address": "Адрес 2",
+      "bank_account": "Счет в банке 2",
+      "development": 5
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 3,
+    "fields": {
+      "firstname": "Имя 3",
+      "lastname": "Фамилия 3",
+      "post_address": "Адрес 3",
+      "bank_account": "Счет в банке 3",
+      "development": 8
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 4,
+    "fields": {
+      "firstname": "Имя 4",
+      "lastname": "Фамилия 4",
+      "post_address": "Адрес 4",
+      "bank_account": "Счет в банке 4",
+      "development": 11
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 5,
+    "fields": {
+      "firstname": "Имя 5",
+      "lastname": "Фамилия 5",
+      "post_address": "Адрес 5",
+      "bank_account": "Счет в банке 5",
+      "development": 12
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 6,
+    "fields": {
+      "firstname": "Имя 6",
+      "lastname": "Фамилия 6",
+      "post_address": "Адрес 6",
+      "bank_account": "Счет в банке 6",
+      "development": 12
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 7,
+    "fields": {
+      "firstname": "Имя 7",
+      "lastname": "Фамилия 7",
+      "post_address": "Адрес 7",
+      "bank_account": "Счет в банке 7",
+      "development": 11
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 8,
+    "fields": {
+      "firstname": "Имя 8",
+      "lastname": "Фамилия 8",
+      "post_address": "Адрес 8",
+      "bank_account": "Счет в банке 8",
+      "development": 12
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 9,
+    "fields": {
+      "firstname": "Имя 9",
+      "lastname": "Фамилия 9",
+      "post_address": "Адрес 9",
+      "bank_account": "Счет в банке 9",
+      "development": 12
+    }
+  },
+  {
+    "model": "mainapp.worker",
+    "pk": 10,
+    "fields": {
+      "firstname": "Имя 10",
+      "lastname": "Фамилия 10",
+      "post_address": "Адрес 10",
+      "bank_account": "Счет в банке 10",
+      "development": 11
+    }
+  }
+]
